@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var profileImageView: UIImageView!
+    
+    //var users: [User: Int] = [:]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,12 @@ class ViewController: UIViewController {
 
     override func preferredStatusBarStyle() -> UIStatusBarStyle {
         return .LightContent
+    }
+    
+    @IBAction func btn_Pressed(sender: AnyObject) {
+        
+        
+        
     }
 }
 

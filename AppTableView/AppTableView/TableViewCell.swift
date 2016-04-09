@@ -9,7 +9,12 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+   
+    @IBOutlet var profileImage: UIView!
+    @IBOutlet var profileName: UILabel!
+    @IBOutlet var profileDescription: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

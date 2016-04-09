@@ -14,6 +14,7 @@
 		0EEE5E2A1CB8798E0016ADA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EEE5E281CB8798E0016ADA7 /* LaunchScreen.storyboard */; };
 		0EEE5E351CB8798F0016ADA7 /* AppTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE5E341CB8798F0016ADA7 /* AppTableViewTests.swift */; };
 		0EEE5E401CB8798F0016ADA7 /* AppTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE5E3F1CB8798F0016ADA7 /* AppTableViewUITests.swift */; };
+		0EEE5E541CB888510016ADA7 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEE5E531CB888510016ADA7 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0EEE5E3B1CB8798F0016ADA7 /* AppTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EEE5E3F1CB8798F0016ADA7 /* AppTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTableViewUITests.swift; sourceTree = "<group>"; };
 		0EEE5E411CB8798F0016ADA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EEE5E531CB888510016ADA7 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				0EEE5E1F1CB8798E0016ADA7 /* AppDelegate.swift */,
+				0EEE5E531CB888510016ADA7 /* TableViewCell.swift */,
 				0EEE5E211CB8798E0016ADA7 /* ViewController.swift */,
 				0EEE5E231CB8798E0016ADA7 /* Main.storyboard */,
 				0EEE5E261CB8798E0016ADA7 /* Assets.xcassets */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EEE5E541CB888510016ADA7 /* TableViewCell.swift in Sources */,
 				0EEE5E221CB8798E0016ADA7 /* ViewController.swift in Sources */,
 				0EEE5E201CB8798E0016ADA7 /* AppDelegate.swift in Sources */,
 			);
@@ -400,6 +404,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ElectivaIOS.AppTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -411,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AppTableView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ElectivaIOS.AppTableView;
 				PRODUCT_NAME = "$(TARGET_NAME)";

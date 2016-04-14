@@ -9,11 +9,11 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-   
-    @IBOutlet var profileImage: UIView!
-    @IBOutlet var profileName: UILabel!
-    @IBOutlet var profileDescription: UILabel!
+
     
+    @IBOutlet weak var profileImage: UIImageView!
+    @IBOutlet weak var profileName: UILabel!
+    @IBOutlet weak var profileDescription: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

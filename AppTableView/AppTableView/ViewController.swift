@@ -12,7 +12,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableViewTest: UITableView!
     
-    let apps = [TableViewCell]()
+    var apps = [TableViewCell]()
+    let textCellIdentifier = "TableViewCell"
+    
     
     
     override func viewDidLoad() {
@@ -33,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @available(iOS 2.0, *)
     internal func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return apps.count
+        return 10 //apps.count
         
     }
     
@@ -43,7 +45,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     internal func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         
-        //let cell = tableView.dequeueReusableCellWithIdentifier(textce)
+        let cell = tableView.dequeueReusableCellWithIdentifier(textCellIdentifier, forIndexPath: indexPath) as! TableViewCell
+        
+        
+        cell.profileName?.text = "Hola" //apps[indexPath].profileName
+        cell.profileDescription?.text = "Descripcion"
+        
+        return cell
         
         
     }

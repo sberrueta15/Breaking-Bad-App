@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         
         self.animatedViewTopMarginConstraint.constant += self.animated ? 100 : -100
         
-        UIView.animateWithDuration(0.5, delay: 0.0, options: .CurveEaseInOut, animations: {() -> Void in
+        UIView.animateWithDuration(1.5, delay: 0.0, options: .CurveEaseInOut, animations: {() -> Void in
             
             self.animatedView.backgroundColor = self.animated ? UIColor.greenColor() : UIColor.blueColor()
             
@@ -48,6 +48,35 @@ class ViewController: UIViewController {
             
             
             }) {(finished) -> Void in
+                
+                
+                UIView.animateWithDuration(0.9, delay: 0.5, usingSpringWithDamping: 0.1, initialSpringVelocity: 0, options: .CurveLinear, animations: {()-> Void in
+                    
+                    
+                    self.animatedViewTopMarginConstraint.constant += self.animated ? 100 : -100
+                    
+                    self.animatedView.superview?.layoutSubviews()
+                    
+                    }) {(finished) -> Void in
+                        
+                
+                }
+                
+                
+                
+                /*
+                UIView.animateWithDuration(0.7, delay: 0.0, options: .CurveEaseIn, animations: {()-> Void in
+                    
+                    self.animatedView.backgroundColor = self.animated ? UIColor.redColor() : UIColor.brownColor()
+                    
+                    self.animatedView.superview?.layoutSubviews()
+                    
+                    
+                    
+                    }) {(finished) -> Void in
+
+                }
+                */
         }
     }
 }
